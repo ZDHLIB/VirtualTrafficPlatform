@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Sat Apr 24 18:19:19 2021 by Eclipse SUMO jtrrouter Version 1.4.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/jtrrouterConfiguration.xsd">
+
+    <input>
+        <net-file value="/home/zac/Documents/Repositories/VirtualTrafficPlatform/src/test/resources/TwoNodes.net.xml"/>
+        <additional-files value="/home/zac/Documents/Repositories/VirtualTrafficPlatform/src/test/resources/TwoNodes.add.xml"/>
+        <route-files value="/home/zac/Documents/Repositories/VirtualTrafficPlatform/src/test/resources/VehDemandNumFlow.rou.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/home/zac/Documents/Repositories/VirtualTrafficPlatform/src/test/resources/TwoNodes.rou.xml"/>
+        <vtype-output value="/home/zac/Documents/Repositories/VirtualTrafficPlatform/src/test/resources/TwoNodes.add.xml"/>
+    </output>
+
+    <processing>
+        <no-internal-links value="true"/>
+        <turn-defaults value="30,50,20"/>
+        <accept-all-destinations value="false"/>
+    </processing>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vehicle id="c637beb6-b582-4f96-a2ab-82fb934ea867.0" type="Car" depart="0.00" departLane="best" departPos="0.00" departSpeed="random">
+        <route edges="1-2 2-3"/>
+    </vehicle>
+</routes>
