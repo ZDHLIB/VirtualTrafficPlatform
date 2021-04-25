@@ -3,14 +3,13 @@ package models.vehdemands;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import models.enums.VehicleTypes;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 public class VehFlow {
     private String id;
-    private String vehType = VehicleTypes.CAR.getName();
+    private String vehTypeId;
     private String from;
     private String to;
     private String departSpeed;

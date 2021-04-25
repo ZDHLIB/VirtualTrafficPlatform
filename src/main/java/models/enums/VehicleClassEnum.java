@@ -1,14 +1,15 @@
 package models.enums;
 
-public enum VehDemandFlowTypes {
-    PROBABILITY(0, "PROBABILITY"),
-    VEHSPERHOUR(1, "VEHSPERHOUR"),
-    PERIOD(2, "PERIOD");
+public enum VehicleClassEnum {
+    PASSENGER(6, "passenger"),
+    BUS(9, "bus"),
+    TRAILER(13, "trailer"),
+    RAILURBAN(19, "rail_urban");
 
     private final int index;
     private final String name;
 
-    VehDemandFlowTypes(Integer index, String name) {
+    VehicleClassEnum(Integer index, String name) {
         this.index = index;
         this.name = name;
     }
@@ -24,7 +25,7 @@ public enum VehDemandFlowTypes {
 
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("VehicleDemandFlowTypes {").append("index:").append(this.index).append(",")
+        sb.append("VehicleTypes {").append("index:").append(this.index).append(",")
                 .append("name:").append(this.name).append("}");
         return sb.toString();
     }
