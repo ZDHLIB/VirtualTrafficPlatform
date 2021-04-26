@@ -8,6 +8,7 @@ import org.dom4j.io.XMLWriter;
 import utils.XMLUtils;
 
 import java.io.FileWriter;
+import java.nio.file.Path;
 import java.util.List;
 
 public class VehDemandFlowService {
@@ -27,9 +28,9 @@ public class VehDemandFlowService {
         }
     }
 
-    public String createVehDemandFlowXML(String filePath, List<VehFlow> vehFlowList) {
+    public Path createVehDemandFlowXML(Path outputFlowFilePath, List<VehFlow> vehFlowList) {
         Document document = vehDemandStrategy.createVehDemandDocument(vehFlowList);
-        XMLUtils.WriteXML(filePath, document);
-        return filePath;
+        XMLUtils.WriteXML(outputFlowFilePath.toString(), document);
+        return outputFlowFilePath;
     }
 }

@@ -3,15 +3,21 @@ package models.commandmodels;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.NonNull;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class JTRRouterInputs implements ICommandInputs {
+    @NonNull
     private String outputFilePath;
+    @NonNull
     private String netFilePath;
+    @NonNull
     private String additionalFilePath;
+    @NonNull
     private String routeFilePath;
+    @NonNull
     private String vtypeOutputFilePath;
     private String turnRatioFilePath;
     private String acceptAllDestinations = "false";

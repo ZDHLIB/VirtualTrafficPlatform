@@ -4,12 +4,13 @@ import models.networks.VehType;
 import org.dom4j.Document;
 import utils.XMLUtils;
 
+import java.nio.file.Path;
 import java.util.List;
 
 public class AdditionalXMLService {
 
-    public static void createAdditionalXML(String filePath, List<VehType> vehTypes) {
+    public static void createAdditionalXML(Path outputAdditionalFilePath, List<VehType> vehTypes) {
         Document document = new AdditionalXMLDOMBuilder().addVehTypes(vehTypes).build();
-        XMLUtils.WriteXML(filePath, document);
+        XMLUtils.WriteXML(outputAdditionalFilePath.toString(), document);
     }
 }

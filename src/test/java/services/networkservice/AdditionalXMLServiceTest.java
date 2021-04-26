@@ -47,6 +47,6 @@ class AdditionalXMLServiceTest {
     @Test
     void createAdditionalXML() {
         Path filePath = Paths.get("src", "test", "resources", "TwoNodes.add.xml");
-        AdditionalXMLService.createAdditionalXML(filePath.toString(), vehTypes);
+        AdditionalXMLService.createAdditionalXML(filePath, vehTypes);
     }
 }

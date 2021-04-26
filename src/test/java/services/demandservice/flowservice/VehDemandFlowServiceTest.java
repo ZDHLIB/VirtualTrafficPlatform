@@ -40,20 +40,20 @@ class VehDemandFlowServiceTest {
     void createVehDemandPeriodFlowXMLFile() {
         Path filePath = Paths.get("src", "test", "resources", "VehDemandPeriodFlow.rou.xml");
         VehDemandFlowService vehDemandFlowContext = new VehDemandFlowService(VehDemandFlowEnum.PERIOD);
-        vehDemandFlowContext.createVehDemandFlowXML(filePath.toString(), vehFlows);
+        vehDemandFlowContext.createVehDemandFlowXML(filePath, vehFlows);
     }
 
     @Test
     void createVehDemandProbFlowXMLFile() {
         Path filePath = Paths.get("src", "test", "resources", "VehDemandProbFlow.rou.xml");
         VehDemandFlowService vehDemandFlowContext = new VehDemandFlowService(VehDemandFlowEnum.PROBABILITY);
-        vehDemandFlowContext.createVehDemandFlowXML(filePath.toString(), vehFlows);
+        vehDemandFlowContext.createVehDemandFlowXML(filePath, vehFlows);
     }
 
     @Test
     void createVehDemandNumFlowXMLFile() {
         Path filePath = Paths.get("src", "test", "resources", "VehDemandNumFlow.rou.xml");
         VehDemandFlowService vehDemandFlowContext = new VehDemandFlowService(VehDemandFlowEnum.PERIOD);
-        vehDemandFlowContext.createVehDemandFlowXML(filePath.toString(), vehFlows);
+        vehDemandFlowContext.createVehDemandFlowXML(filePath, vehFlows);
     }
 }
